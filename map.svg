@@ -13,8 +13,8 @@
    viewBox="0 0 694.99998 1068"
    version="1.1"
    id="svg2"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="fh-wedel.svg">
+   inkscape:version="0.91 r"
+   sodipodi:docname="map.svg">
   <metadata
      id="metadata1799">
     <rdf:RDF>
@@ -35,17 +35,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1012"
+     inkscape:window-width="1280"
+     inkscape:window-height="957"
      id="namedview1797"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="1.28"
-     inkscape:cx="456.68995"
-     inkscape:cy="1027.8118"
+     inkscape:zoom="0.64"
+     inkscape:cx="885.21193"
+     inkscape:cy="342.86493"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -3960,141 +3960,104 @@
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="APs"
-     style="display:inline">
-    <path
-       sodipodi:type="arc"
+     inkscape:label="APs">
+    <circle
+       r="11.200001"
+       cy="903.88812"
+       cx="558.76587"
        style="fill:#000000;stroke:none"
        id="f0:b0:52:9f:24:78"
-       sodipodi:cx="694.12476"
-       sodipodi:cy="1070.6636"
-       sodipodi:rx="9.6674757"
-       sodipodi:ry="9.6674757"
-       d="m 703.79223,1070.6636 a 9.6674757,9.6674757 0 1 1 -19.33495,0 9.6674757,9.6674757 0 1 1 19.33495,0 z"
-       transform="matrix(1.1585238,0,0,1.1585238,-245.39419,-336.50106)"
        inkscape:label="">
       <title
          id="title6693">Audimax unten</title>
-    </path>
-    <path
+    </circle>
+    <circle
        inkscape:label=""
-       transform="matrix(1.1585238,0,0,1.1585238,-362.06682,-360.80785)"
-       d="m 703.79223,1070.6636 a 9.6674757,9.6674757 0 1 1 -19.33495,0 9.6674757,9.6674757 0 1 1 19.33495,0 z"
-       sodipodi:ry="9.6674757"
-       sodipodi:rx="9.6674757"
-       sodipodi:cy="1070.6636"
-       sodipodi:cx="694.12476"
        id="f0:b0:52:a0:99:58"
        style="fill:#000000;stroke:none"
-       sodipodi:type="arc">
+       cx="442.09326"
+       cy="879.58136"
+       r="11.200001">
       <title
          id="title6691">Lesemax</title>
-    </path>
-    <path
-       sodipodi:type="arc"
+    </circle>
+    <circle
        style="fill:#000000;stroke:none"
        id="f0:b0:52:9f:29:38"
-       sodipodi:cx="694.12476"
-       sodipodi:cy="1070.6636"
-       sodipodi:rx="9.6674757"
-       sodipodi:ry="9.6674757"
-       d="m 703.79223,1070.6636 a 9.6674757,9.6674757 0 1 1 -19.33495,0 9.6674757,9.6674757 0 1 1 19.33495,0 z"
-       transform="matrix(1.1585238,0,0,1.1585238,-322.734,-390.41795)"
-       inkscape:label="">
+       inkscape:label=""
+       cx="481.42606"
+       cy="849.97125"
+       r="11.200001">
       <title
          id="title6697">Audimax Brücke</title>
-    </path>
-    <path
+    </circle>
+    <circle
        inkscape:label=""
-       transform="matrix(1.1585238,0,0,1.1585238,-475.20391,-765.6265)"
-       d="m 703.79223,1070.6636 a 9.6674757,9.6674757 0 1 1 -19.33495,0 9.6674757,9.6674757 0 1 1 19.33495,0 z"
-       sodipodi:ry="9.6674757"
-       sodipodi:rx="9.6674757"
-       sodipodi:cy="1070.6636"
-       sodipodi:cx="694.12476"
        id="f0:b0:52:9f:55:e8"
        style="fill:#000000;stroke:none"
-       sodipodi:type="arc">
+       cx="328.95615"
+       cy="474.76276"
+       r="11.200001">
       <title
          id="title6701">Kreuzung HS4</title>
-    </path>
-    <path
-       sodipodi:type="arc"
+    </circle>
+    <circle
        style="fill:#000000;stroke:none"
        id="f0:b0:52:9f:3f:38"
-       sodipodi:cx="694.12476"
-       sodipodi:cy="1070.6636"
-       sodipodi:rx="9.6674757"
-       sodipodi:ry="9.6674757"
-       d="m 703.79223,1070.6636 a 9.6674757,9.6674757 0 1 1 -19.33495,0 9.6674757,9.6674757 0 1 1 19.33495,0 z"
-       transform="matrix(1.1585238,0,0,1.1585238,-526.9111,-680.33174)"
-       inkscape:label="">
+       inkscape:label=""
+       cx="277.24896"
+       cy="560.0575"
+       r="11.200001">
       <title
          id="title6705">RZ5</title>
-    </path>
-    <path
-       sodipodi:type="arc"
+    </circle>
+    <circle
        style="fill:#000000;stroke:none"
        id="f0:b0:52:a0:9f:b8"
-       sodipodi:cx="694.12476"
-       sodipodi:cy="1070.6636"
-       sodipodi:rx="9.6674757"
-       sodipodi:ry="9.6674757"
-       d="m 703.79223,1070.6636 a 9.6674757,9.6674757 0 1 1 -19.33495,0 9.6674757,9.6674757 0 1 1 19.33495,0 z"
-       transform="matrix(1.1585238,0,0,1.1585238,-533.54022,-882.74106)"
-       inkscape:label="">
+       inkscape:label=""
+       cx="270.61984"
+       cy="357.64819"
+       r="11.200001">
       <title
          id="title6709">Zwischen HS1 und HS2</title>
-    </path>
-    <path
+    </circle>
+    <circle
        inkscape:label=""
-       transform="matrix(1.1585238,0,0,1.1585238,-637.29022,-1078.9911)"
-       d="m 703.79223,1070.6636 a 9.6674757,9.6674757 0 1 1 -19.33495,0 9.6674757,9.6674757 0 1 1 19.33495,0 z"
-       sodipodi:ry="9.6674757"
-       sodipodi:rx="9.6674757"
-       sodipodi:cy="1070.6636"
-       sodipodi:cx="694.12476"
        id="f0:b0:52:a0:9d:78"
        style="fill:#000000;stroke:none"
-       sodipodi:type="arc">
+       cx="166.86983"
+       cy="161.39816"
+       r="11.200001">
       <title
          id="title6713">Serverraum</title>
-    </path>
-    <path
-       sodipodi:type="arc"
+    </circle>
+    <circle
        style="fill:#000000;stroke:none"
        id="f0:b0:52:a3:f1:98"
-       sodipodi:cx="694.12476"
-       sodipodi:cy="1070.6636"
-       sodipodi:rx="9.6674757"
-       sodipodi:ry="9.6674757"
-       d="m 703.79223,1070.6636 a 9.6674757,9.6674757 0 1 1 -19.33495,0 9.6674757,9.6674757 0 1 1 19.33495,0 z"
-       transform="matrix(1.1585238,0,0,1.1585238,-664.16522,-1149.6161)"
-       inkscape:label="">
+       inkscape:label=""
+       cx="139.99483"
+       cy="90.773163"
+       r="11.200001">
       <title
          id="title6717">RZ3</title>
-    </path>
-    <path
+    </circle>
+    <circle
        inkscape:label=""
-       transform="matrix(1.1585238,0,0,1.1585238,-609.16522,-993.9911)"
-       d="m 703.79223,1070.6636 a 9.6674757,9.6674757 0 1 1 -19.33495,0 9.6674757,9.6674757 0 1 1 19.33495,0 z"
-       sodipodi:ry="9.6674757"
-       sodipodi:rx="9.6674757"
-       sodipodi:cy="1070.6636"
-       sodipodi:cx="694.12476"
        id="f0:b0:52:a0:97:68"
        style="fill:#000000;stroke:none"
-       sodipodi:type="arc">
+       cx="194.99483"
+       cy="246.39816"
+       r="11.200001">
       <title
          id="title6721">HS5</title>
-    </path>
+    </circle>
     <rect
        style="fill:#000000;stroke:none"
        id="f0:b0:52:a3:e6:d8"
        width="22.400002"
        height="22.400002"
        x="151.875"
-       y="79.974976"
+       y="79.975006"
        inkscape:label="">
       <title
          id="title6725">Robotik</title>
