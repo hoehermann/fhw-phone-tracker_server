@@ -8,13 +8,17 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="868.74994"
-   height="1335"
    viewBox="0 0 694.99998 1068"
    version="1.1"
    id="svg2"
-   inkscape:version="0.91 r"
-   sodipodi:docname="map.svg">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="map.svg"
+   width="100%"
+   height="100%"
+   onload='markAPs()'>
+  <script type="text/javascript"><![CDATA[
+/*JAVASCRIPTGOESHERE*/
+  ]]></script>
   <metadata
      id="metadata1799">
     <rdf:RDF>
@@ -35,17 +39,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1280"
-     inkscape:window-height="957"
+     inkscape:window-width="1920"
+     inkscape:window-height="1012"
      id="namedview1797"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="0.64"
-     inkscape:cx="885.21193"
-     inkscape:cy="342.86493"
+     inkscape:zoom="1.28"
+     inkscape:cx="499.76566"
+     inkscape:cy="837.60852"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -3982,16 +3986,6 @@
          id="title6691">Lesemax</title>
     </circle>
     <circle
-       style="fill:#000000;stroke:none"
-       id="f0:b0:52:9f:29:38"
-       inkscape:label=""
-       cx="481.42606"
-       cy="849.97125"
-       r="11.200001">
-      <title
-         id="title6697">Audimax Brücke</title>
-    </circle>
-    <circle
        inkscape:label=""
        id="f0:b0:52:9f:55:e8"
        style="fill:#000000;stroke:none"
@@ -4062,5 +4056,28 @@
       <title
          id="title6725">Robotik</title>
     </rect>
+    <rect
+       style="fill:#000000;stroke:none"
+       id="f0:b0:52:9f:29:38"
+       width="22.400002"
+       height="22.400002"
+       x="470.67502"
+       y="838.04999"
+       inkscape:label="">
+      <title
+         id="title6725-1">Audimax Brücke</title>
+    </rect>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="314.0625"
+       y="42.21875"
+       id="note"
+       sodipodi:linespacing="125%"
+       inkscape:label="note"><tspan
+         sodipodi:role="line"
+         id="tspan3744"
+         x="314.0625"
+         y="42.21875">Stand: unbekannt</tspan></text>
   </g>
 </svg>

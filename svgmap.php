@@ -37,33 +37,15 @@ if ($index < 0) {
 } else {
   $selected = $data[$index];
 }
-?>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Map</title>
-  <meta charset="UTF-8" />
-  <style type="text/css">
-      body, html {
-        height:100%;
-        width:100%;
-        margin:0px;
-        padding:0px;
-        font-family: sans-serif;
-      }
-      svg {
-        position: absolute;
-      }
-  </style>
-  <script>
+$js = <<<EOT
     function level2radius(x) {
       return 1.09491*Math.exp(-0.0561178*x)+10;
     }
     function markAPs() {
-      var svgmap = document.getElementsByTagName("svg")[0];
-      <?php
-        echo "svgmap.getElementById(\"note\").firstChild.innerHTML = \"".$selected["date"]." ".$selected["time"]." ".$selected["comment"]."\";";
-      // TODO: replace this by in-svg css
+      var svgmap = document;
+EOT;
+        $js .= "svgmap.getElementById(\"note\").firstChild.innerHTML = \"".$selected["date"]." ".$selected["time"]." ".$selected["comment"]."\";\n";
+        // TODO: replace this by in-svg css
         $stations = $selected["stations"];
         $bssids = array();
         $levels = array();
@@ -71,9 +53,9 @@ if ($index < 0) {
           $bssids[] = $station["bssid"];
           $levels[] = $station["level"];
         }
-        echo "var bssids = [\"".implode("\", \"",$bssids)."\"];";
-        echo "var levels = [\"".implode("\", \"",$levels)."\"];";
-      ?>
+        $js .= "var bssids = [\"".implode("\", \"",$bssids)."\"];\n";
+        $js .= "var levels = [\"".implode("\", \"",$levels)."\"];\n";
+$js .= <<<EOT
       for (var i = 0; i < bssids.length ; ++i)  {
         var bssid = bssids[i];
         var level = parseInt(levels[i]);
@@ -103,20 +85,7 @@ if ($index < 0) {
         }
       }
     }
-  </script>
-</head>
-<body onload="markAPs();"><?php
-if (false) {
-  foreach ($data as $d) {
-    echo $d["comment"]."<br/>\n";
-    foreach ($d["stations"] as $station) {
-      if ($station["level"] > -70) {
-        echo "BSSID: ".$station["bssid"]." LEVEL: ".$station["level"]."<br/>\n";
-      }
-    }
-    echo "<br/>\n";
-  }
-}
-echo file_get_contents("map.svg");
-?></body>
-</html>
+EOT;
+$mapdata = file_get_contents("map.svg");
+header('Content-Type: image/svg+xml');
+echo str_replace("/*JAVASCRIPTGOESHERE*/",$js,$mapdata);
