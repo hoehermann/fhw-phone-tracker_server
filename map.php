@@ -95,10 +95,12 @@ if ($index < 0) {
             ap.r.baseVal.value = radius;
           }
           else if (ap.tagName == "rect") {
+            var x = ap.x.baseVal.value + ap.width.baseVal.value/2;
+            var y = ap.y.baseVal.value + ap.height.baseVal.value/2;
             ap.height.baseVal.value = radius*2;
             ap.width.baseVal.value = radius*2;
-            ap.x.baseVal.value -= radius;
-            ap.y.baseVal.value -= radius;
+            ap.x.baseVal.value = x-radius;
+            ap.y.baseVal.value = y-radius;
           }
         }
       }
