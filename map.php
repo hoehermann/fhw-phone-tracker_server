@@ -1,42 +1,7 @@
 <?php
-function sortByLevel($a, $b){
-  if ($a["level"] == $b["level"]) {
-    return strcmp($a["bssid"],$b["bssid"]);
-  }
-  return ($a["level"] > $b["level"]) ? -1 : 1;
-}
-$requests = file("requests.log");
-$data = array();
-foreach ($requests as $request) {
-  $parts = explode("\t",$request);
-  list ($date, $time, $json) = $parts;
-  $jsonobj = json_decode($json);
-  $phone = $jsonobj->{"phone"};
-  $comment = $jsonobj->{"comment"};
-  $jsonstations = $jsonobj->{"stations"};
-  $stations = array();
-  foreach ($jsonstations as $jsonstation) {
-    $stations[] = array("bssid"=>$jsonstation->{"bssid"}, "level"=>$jsonstation->{"level"});
-  }
-  usort($stations,"sortByLevel");
-  $data[] = array("date"=>$date, "time"=>$time, "phone"=>$phone, "stations"=>$stations, "comment"=>$comment);
-}
-if (isset($_GET["phone"])) {
-  function phone($var) {
-    return $var["phone"] == $_GET["phone"];
-  }
-  $data = array_filter($data, "phone");
-}
-if (!isset($_GET["i"])) {
-  $index = -1;
-} else {
-  $index = $_GET["i"];
-}
-if ($index < 0) {
-  $selected = $data[count($data)+$index];
-} else {
-  $selected = $data[$index];
-}
+require("parseinput.php");
+$data = parse_input();
+$selected = select_data($data);
 ?>
 <!DOCTYPE html>
 <html>
@@ -108,9 +73,10 @@ if ($index < 0) {
   </script>
 </head>
 <body onload="markAPs();"><?php
-if (false) {
-  foreach ($data as $d) {
-    echo $d["comment"]."<br/>\n";
+if (isset($_GET["list"])) {
+  for ($i = 0; $i < count($data) ; $i++) {
+    $d = $data[$i];
+    echo $i."/".($i-count($data)).": ".$d["date"]." ".$d["time"]." ".$d["comment"]."<br/>\n";
     foreach ($d["stations"] as $station) {
       if ($station["level"] > -70) {
         echo "BSSID: ".$station["bssid"]." LEVEL: ".$station["level"]."<br/>\n";

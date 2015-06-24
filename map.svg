@@ -15,11 +15,14 @@
    sodipodi:docname="map.svg"
    width="100%"
    height="100%"
-   onload='markAPs()'>
-  <script type="text/javascript"><![CDATA[
+   onload="markAPs()">
+  <script
+     type="text/javascript"
+     id="script3">
 /*JAVASCRIPTGOESHERE*/
-  ]]></script>
-  <title>FHW Phone Tracker</title>
+  </script>
+  <title
+     id="title5">FHW Phone Tracker</title>
   <metadata
      id="metadata1799">
     <rdf:RDF>
@@ -49,8 +52,8 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="1.28"
-     inkscape:cx="499.76566"
-     inkscape:cy="837.60852"
+     inkscape:cx="133.46621"
+     inkscape:cy="586.62548"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -3972,7 +3975,11 @@
        cx="558.76587"
        style="fill:#000000;stroke:none"
        id="f0:b0:52:9f:24:78"
-       inkscape:label="">
+       inkscape:label=""
+       sodipodi:cx="558.76587"
+       sodipodi:cy="903.88812"
+       sodipodi:rx="11.200001"
+       sodipodi:ry="11.200001">
       <title
          id="title6693">Audimax unten</title>
     </circle>
@@ -3982,7 +3989,11 @@
        style="fill:#000000;stroke:none"
        cx="442.09326"
        cy="879.58136"
-       r="11.200001">
+       r="11.200001"
+       sodipodi:cx="442.09326"
+       sodipodi:cy="879.58136"
+       sodipodi:rx="11.200001"
+       sodipodi:ry="11.200001">
       <title
          id="title6691">Lesemax</title>
     </circle>
@@ -3992,7 +4003,11 @@
        style="fill:#000000;stroke:none"
        cx="328.95615"
        cy="474.76276"
-       r="11.200001">
+       r="11.200001"
+       sodipodi:cx="328.95615"
+       sodipodi:cy="474.76276"
+       sodipodi:rx="11.200001"
+       sodipodi:ry="11.200001">
       <title
          id="title6701">Kreuzung HS4</title>
     </circle>
@@ -4002,7 +4017,11 @@
        inkscape:label=""
        cx="277.24896"
        cy="560.0575"
-       r="11.200001">
+       r="11.200001"
+       sodipodi:cx="277.24896"
+       sodipodi:cy="560.0575"
+       sodipodi:rx="11.200001"
+       sodipodi:ry="11.200001">
       <title
          id="title6705">RZ5</title>
     </circle>
@@ -4012,7 +4031,11 @@
        inkscape:label=""
        cx="270.61984"
        cy="357.64819"
-       r="11.200001">
+       r="11.200001"
+       sodipodi:cx="270.61984"
+       sodipodi:cy="357.64819"
+       sodipodi:rx="11.200001"
+       sodipodi:ry="11.200001">
       <title
          id="title6709">Zwischen HS1 und HS2</title>
     </circle>
@@ -4022,7 +4045,11 @@
        style="fill:#000000;stroke:none"
        cx="166.86983"
        cy="161.39816"
-       r="11.200001">
+       r="11.200001"
+       sodipodi:cx="166.86983"
+       sodipodi:cy="161.39816"
+       sodipodi:rx="11.200001"
+       sodipodi:ry="11.200001">
       <title
          id="title6713">Serverraum</title>
     </circle>
@@ -4032,7 +4059,12 @@
        inkscape:label=""
        cx="139.99483"
        cy="90.773163"
-       r="11.200001">
+       r="11.200001"
+       sodipodi:cx="139.99483"
+       sodipodi:cy="90.773163"
+       sodipodi:rx="11.200001"
+       sodipodi:ry="11.200001"
+       transform="translate(-10.15625,-14.0625)">
       <title
          id="title6717">RZ3</title>
     </circle>
@@ -4042,20 +4074,24 @@
        style="fill:#000000;stroke:none"
        cx="194.99483"
        cy="246.39816"
-       r="11.200001">
+       r="11.200001"
+       sodipodi:cx="194.99483"
+       sodipodi:cy="246.39816"
+       sodipodi:rx="11.200001"
+       sodipodi:ry="11.200001">
       <title
          id="title6721">HS5</title>
     </circle>
     <rect
        style="fill:#000000;stroke:none"
-       id="f0:b0:52:a3:e6:d8"
+       id="f0:b0:52:a3:f6:58"
        width="22.400002"
        height="22.400002"
-       x="151.875"
-       y="79.975006"
+       x="135.46875"
+       y="65.131256"
        inkscape:label="">
       <title
-         id="title6725">Robotik</title>
+         id="title6725">SR9</title>
     </rect>
     <rect
        style="fill:#000000;stroke:none"
@@ -4080,5 +4116,65 @@
          id="tspan3744"
          x="314.0625"
          y="42.21875">Stand: unbekannt</tspan></text>
+    <circle
+       r="11.200001"
+       cy="474.76276"
+       cx="328.95615"
+       style="fill:#000000;stroke:none"
+       id="f0:b0:52:9f:63:f8"
+       inkscape:label=""
+       sodipodi:cx="328.95615"
+       sodipodi:cy="474.76276"
+       sodipodi:rx="11.200001"
+       sodipodi:ry="11.200001"
+       transform="translate(186.71875,-96.875)">
+      <title
+         id="title3750">Mitarbeiterbüros Süd</title>
+    </circle>
+    <circle
+       sodipodi:ry="11.200001"
+       sodipodi:rx="11.200001"
+       sodipodi:cy="474.76276"
+       sodipodi:cx="328.95615"
+       inkscape:label=""
+       id="f0:b0:52:9f:68:c8"
+       style="fill:#000000;stroke:none"
+       cx="328.95615"
+       cy="474.76276"
+       r="11.200001"
+       transform="translate(171.09375,-203.125)">
+      <title
+         id="title3754">Mitarbeiterbüros Nord</title>
+    </circle>
+    <circle
+       r="11.200001"
+       cy="474.76276"
+       cx="328.95615"
+       style="fill:#000000;stroke:none"
+       id="f0:b0:52:a4:21:d8"
+       inkscape:label=""
+       sodipodi:cx="328.95615"
+       sodipodi:cy="474.76276"
+       sodipodi:rx="11.200001"
+       sodipodi:ry="11.200001"
+       transform="translate(27.34394,-195.3125)">
+      <title
+         id="title3758">Lernboxen</title>
+    </circle>
+    <circle
+       transform="translate(23.4375,-19.53125)"
+       sodipodi:ry="11.200001"
+       sodipodi:rx="11.200001"
+       sodipodi:cy="90.773163"
+       sodipodi:cx="139.99483"
+       r="11.200001"
+       cy="90.773163"
+       cx="139.99483"
+       inkscape:label=""
+       id="f0:b0:52:a3:e6:d8"
+       style="fill:#000000;stroke:none">
+      <title
+         id="title3762">RZ2</title>
+    </circle>
   </g>
 </svg>
