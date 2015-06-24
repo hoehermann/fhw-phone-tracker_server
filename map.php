@@ -29,7 +29,7 @@ foreach ($requests as $request) {
 	<meta charset="UTF-8" />
   <script>
     function markAPs() {
-      svgmap = document.getElementsByTagName("svg")[0]
+      svgmap = document.getElementsByTagName("svg")[0];
       <?php
       // TODO: replace this by in-svg css
       /*
