@@ -55,5 +55,8 @@ $js .= <<<EOT
     }
 EOT;
 $mapdata = file_get_contents("map.svg");
+$js = '<![CDATA[
+'.$js.'
+]]>';
 header('Content-Type: image/svg+xml');
 echo str_replace("/*JAVASCRIPTGOESHERE*/",$js,$mapdata);
