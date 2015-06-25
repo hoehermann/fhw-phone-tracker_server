@@ -1,4 +1,7 @@
 <?php
+if (!class_exists("SimpleXMLElement")) {
+  die("class SimpleXMLElement is missing!");
+}
 require("parseinput.php");
 $data = parse_input();
 $selected = select_data($data);
