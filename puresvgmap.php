@@ -22,13 +22,15 @@ function level2opacity($x) {
 
 $log = array();
 $svgxml = file_get_contents("map.svg");
+
+// don't parse the whole map. find the layer containing the APs
 $aplayerlabelpos = strpos($svgxml,'inkscape:label="APs"') or die ("Could not find Layer");
 $aplayerbeginpos = strrpos($svgxml,'<g',$aplayerlabelpos-strlen($svgxml));
 $innergrouppos = strpos($svgxml,'<g',$aplayerlabelpos);
 if ($innergrouppos) { die ("Inner groups are not supported."); }
 $aplayerendpos = strpos($svgxml,'</g>',$aplayerlabelpos)+4;
 $aplayerxml = substr($svgxml,$aplayerbeginpos,$aplayerendpos-$aplayerbeginpos);
-$aplayer = new SimpleXMLElement('<svg
+$aplayerxml = '<svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -36,8 +38,11 @@ $aplayer = new SimpleXMLElement('<svg
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">'.$aplayerxml.'</svg>');
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">'.$aplayerxml.'</svg>'; // import da namespaces
+$aplayer = new SimpleXMLElement($aplayerxml);
 $aplayer = $aplayer->{"g"};
+// $aplayer now holds the parsed SVG XML document
+
 $stations = $selected["stations"];
 foreach ($stations as $station) {
   $level = $station["level"];
@@ -45,18 +50,10 @@ foreach ($stations as $station) {
   $opacity = level2opacity($level);
   $bssid = $station["bssid"];
   
+  // TODO: strip frequency and vlan-part of the BSSIDs, then use [contains(@id, '".relevantbssid."')] for xpath selector
   if ($result = $aplayer->xpath("//svg:circle[@id = '".$bssid."']")) {
     $result[0]->attributes()->r = $radius;
-    $result[0]->attributes()->style = "fill:#FF0000;fill-opacity:".$opacity.";";
-  }
-  if ($result = $aplayer->xpath("//svg:rect[@id = '".$bssid."']")) {
-    $x = $result[0]->attributes()->x - $result[0]->attributes()->width/2;
-    $y = $result[0]->attributes()->y - $result[0]->attributes()->height/2;
-    $result[0]->attributes()->x = $x - $radius;
-    $result[0]->attributes()->y = $y - $radius;
-    $result[0]->attributes()->width = $radius*2;
-    $result[0]->attributes()->height = $radius*2;
-    $result[0]->attributes()->style = "fill:#FF0000;fill-opacity:".$opacity.";";
+    $result[0]->attributes()->style = str_replace("fill:#000000;","fill:#FF0000;fill-opacity:".$opacity.";",$result[0]->attributes()->style);
   }
 }
 $result = $aplayer->xpath("//svg:text")[0];
