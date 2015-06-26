@@ -26,6 +26,12 @@ $selected = select_data($data);
     }
     function markAPs() {
       var svgmap = document.getElementsByTagName("svg")[0];
+      try {
+        var becauseieistupid = svgmap.getSVGDocument();
+        if (becauseieistupid != null) {
+          svgmap = becauseieistupid;
+        }
+      } catch (err) {}
       <?php
         echo "svgmap.getElementById(\"note\").firstChild.innerHTML = \"".$selected["date"]." ".$selected["time"]." ".$selected["comment"]."\";";
       // TODO: replace this by in-svg css
