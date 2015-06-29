@@ -56,8 +56,9 @@ foreach ($stations as $station) {
     $result[0]->attributes()->style = str_replace("fill:#000000;","fill:#FF0000;fill-opacity:".$opacity.";",$result[0]->attributes()->style);
   }
 }
-$result = $aplayer->xpath("//svg:text")[0];
-$result->children()->tspan[0] = "Letztes Update: ".$selected["date"]." ".$selected["time"]." ".$selected["comment"];
+if ($result = $aplayer->xpath("//svg:text")) {
+  $result[0][0] = "Letztes Update: ".$selected["date"]." ".$selected["time"]." ".$selected["comment"];
+}
 
 $aplayerxml = $aplayer->asXML();
 $svgxml = substr($svgxml,0,$aplayerbeginpos).$aplayerxml.substr($svgxml,$aplayerendpos);
