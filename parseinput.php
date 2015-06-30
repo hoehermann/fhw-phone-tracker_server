@@ -12,10 +12,19 @@ function parse_input() {
   $data = array();
   foreach ($requests as $request) {
     $parts = explode("\t",$request);
+    if (count($parts) != 3) {
+      continue;
+    }
     list ($date, $time, $json) = $parts;
     $jsonobj = json_decode($json);
+    if (!isset($jsonobj->{"phone"})) {
+      continue;
+    }
     $phone = $jsonobj->{"phone"};
-    $comment = $jsonobj->{"comment"};
+    $comment = "";
+    if (isset($jsonobj->{"comment"})) {
+      $comment = $jsonobj->{"comment"};
+    }
     $stations = array();
     if (isset($jsonobj->{"stations"})) {
       $jsonstations = $jsonobj->{"stations"};

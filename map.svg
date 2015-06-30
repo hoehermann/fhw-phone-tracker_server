@@ -52,8 +52,8 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="1.28"
-     inkscape:cx="140.54437"
-     inkscape:cy="366.31298"
+     inkscape:cx="-73.572895"
+     inkscape:cy="733.31252"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -3971,7 +3971,7 @@
      inkscape:label="APs">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        x="314.06293"
        y="42.218712"
        id="note"
@@ -3985,7 +3985,7 @@
        r="5"
        cy="903.88806"
        cx="558.76587"
-       style="fill:#000000;stroke:#008080"
+       style="fill:#000000;stroke:#008080;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        id="5"
        inkscape:label="">
       <title
@@ -3994,7 +3994,7 @@
     <circle
        inkscape:label=""
        id="f0:b0:52:a0:99:58"
-       style="fill:#000000;stroke:#008080"
+       style="fill:#000000;stroke:#008080;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        cx="442.09326"
        cy="879.5813"
        r="5">
@@ -4004,7 +4004,7 @@
     <circle
        inkscape:label=""
        id="f0:b0:52:9f:55:e8"
-       style="fill:#000000;stroke:#008080"
+       style="fill:#000000;stroke:#008080;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        cx="328.95615"
        cy="474.76273"
        r="5">
@@ -4012,7 +4012,7 @@
          id="title6701">Kreuzung HS4</title>
     </circle>
     <circle
-       style="fill:#000000;stroke:#008080"
+       style="fill:#000000;stroke:#008080;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        id="f0:b0:52:9f:3f:38"
        inkscape:label=""
        cx="277.24896"
@@ -4022,7 +4022,7 @@
          id="title6705">RZ5</title>
     </circle>
     <circle
-       style="fill:#000000;stroke:#008080"
+       style="fill:#000000;stroke:#008080;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        id="f0:b0:52:a0:9f:b8"
        inkscape:label=""
        cx="270.61984"
@@ -4034,7 +4034,7 @@
     <circle
        inkscape:label=""
        id="f0:b0:52:a0:9d:78"
-       style="fill:#000000;stroke:#008080"
+       style="fill:#000000;stroke:#008080;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        cx="166.86983"
        cy="161.39813"
        r="5">
@@ -4042,7 +4042,7 @@
          id="title6713">Serverraum</title>
     </circle>
     <circle
-       style="fill:#000000;stroke:#008080"
+       style="fill:#000000;stroke:#008080;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        id="f0:b0:52:a3:f1:98"
        inkscape:label=""
        cx="132.96358"
@@ -4054,9 +4054,9 @@
     <circle
        inkscape:label=""
        id="f0:b0:52:a0:97:68"
-       style="fill:#000000;stroke:#008080"
-       cx="194.99483"
-       cy="246.39813"
+       style="fill:#000000;stroke:#008080;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
+       cx="203.9792"
+       cy="237.02313"
        r="5">
       <title
          id="title6721">HS5</title>
@@ -4065,7 +4065,7 @@
        r="5"
        cy="377.88773"
        cx="515.67529"
-       style="fill:#000000;stroke:#008080"
+       style="fill:#000000;stroke:#008080;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        id="f0:b0:52:9f:63:f8"
        inkscape:label="">
       <title
@@ -4074,7 +4074,7 @@
     <circle
        inkscape:label=""
        id="f0:b0:52:9f:68:c8"
-       style="fill:#000000;stroke:#008080"
+       style="fill:#000000;stroke:#008080;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        cx="500.05032"
        cy="271.63773"
        r="5">
@@ -4085,7 +4085,7 @@
        r="5"
        cy="279.45023"
        cx="356.30051"
-       style="fill:#000000;stroke:#008080"
+       style="fill:#000000;stroke:#008080;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        id="f0:b0:52:a4:21:d8"
        inkscape:label="">
       <title
@@ -4097,7 +4097,7 @@
        cx="161.86983"
        inkscape:label=""
        id="f0:b0:52:a3:e6:d8"
-       style="fill:#000000;stroke:#008080">
+       style="fill:#000000;stroke:#008080;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">
       <title
          id="title3762">RZ2</title>
     </circle>
@@ -4105,14 +4105,14 @@
        r="5"
        cy="822.55005"
        cx="479.59369"
-       style="fill:#000000;stroke:#008000"
+       style="fill:#000000;stroke:#008000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        id="f0:b0:52:9f:29:38"
        inkscape:label="">
       <title
          id="title3756">Audimax Brücke</title>
     </circle>
     <circle
-       style="fill:#000000;stroke:#008000"
+       style="fill:#000000;stroke:#008000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        id="f0:b0:52:a3:f6:58"
        inkscape:label=""
        cx="145.464"
@@ -4120,6 +4120,36 @@
        r="5">
       <title
          id="title3760">SR9</title>
+    </circle>
+    <circle
+       r="5"
+       cy="330.30441"
+       cx="241.71359"
+       inkscape:label=""
+       id="f0:b0:52:a0:a2:78"
+       style="fill:#000000;stroke:#008000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">
+      <title
+         id="title4907">Überbau 1. Stock Nordwest</title>
+    </circle>
+    <circle
+       style="fill:#000000;stroke:#008000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
+       id="f0:b0:52:a0:9f:c8"
+       inkscape:label=""
+       cx="284.68234"
+       cy="377.17941"
+       r="5">
+      <title
+         id="title4911">Überbau 1. Stock Fertigungstechnik</title>
+    </circle>
+    <circle
+       r="5"
+       cy="377.17941"
+       cx="251.08859"
+       inkscape:label=""
+       id="f0:b0:52:9f:43:f8"
+       style="fill:#000000;stroke:#666666;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">
+      <title
+         id="title4915">Überbau 2. Stock Süd</title>
     </circle>
   </g>
 </svg>
