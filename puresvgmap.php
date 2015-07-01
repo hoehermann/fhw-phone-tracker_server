@@ -20,6 +20,17 @@ function level2opacity($x) {
   return $op;
 }
 
+function get_ap_position($aplayer, $bssid) {
+  $result = $aplayer->xpath("//svg:circle[@id = '".$bssid."']");
+  if (!$result) {
+    return false;
+  }
+  return array(floatval($result[0]->attributes()->cx), floatval($result[0]->attributes()->cy), $result[0]);
+}
+function euclidean_distance($a,$b) {
+  return sqrt(pow(($a[0]-$b[0]),2)+pow(($b[1]-$a[1]),2));
+}
+
 $log = array();
 $svgxml = file_get_contents("map.svg");
 
@@ -44,18 +55,38 @@ $aplayer = $aplayer->{"g"};
 // $aplayer now holds the parsed SVG XML document
 
 $stations = $selected["stations"];
+$bssid2radius = array();
 foreach ($stations as $station) {
   $level = $station["level"];
   $radius = level2radius($level);
   $opacity = level2opacity($level);
-  $bssid = $station["bssid"];
+  $bssid = $station["bssid"]; // TODO: strip frequency and vlan-part of the BSSIDs, then use [contains(@id, '".relevantbssid."')] for xpath selector or mangle the ids programatically
   
-  // TODO: strip frequency and vlan-part of the BSSIDs, then use [contains(@id, '".relevantbssid."')] for xpath selector
   if ($result = $aplayer->xpath("//svg:circle[@id = '".$bssid."']")) {
     $result[0]->attributes()->r = $radius;
     $result[0]->attributes()->style = str_replace("fill:#000000;","fill:#FF0000;fill-opacity:".$opacity.";",$result[0]->attributes()->style);
+    $bssid2radius[$bssid] = $radius;
   }
 }
+
+// if too small, force circles to overlap by making big circles even bigger
+if (count($bssid2radius) > 0) {
+  $bestBSSID = array_keys($bssid2radius, min($bssid2radius));
+  $bestBSSID = $bestBSSID[0];
+  $bestBSSIDpos = get_ap_position($aplayer, $bestBSSID);
+  $bestRadius = $bssid2radius[$bestBSSID];
+  foreach($bssid2radius as $bssid => $radius) {
+    if ($bssid != $bestBSSID) {
+      $BSSIDpos = get_ap_position($aplayer, $bssid);
+      $dist = euclidean_distance($bestBSSIDpos,$BSSIDpos);
+      $radius = 1.1*$dist - $bestRadius;
+      if ($BSSIDpos[2]->attributes()->r < $radius) {
+        $BSSIDpos[2]->attributes()->r = $radius;
+      }
+    }
+  }
+}
+
 if ($result = $aplayer->xpath("//svg:text")) {
   $result[0][0] = "Letztes Update: ".$selected["date"]." ".$selected["time"]." ".$selected["comment"];
 }
